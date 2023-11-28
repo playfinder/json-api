@@ -103,7 +103,7 @@ class Stack implements StackInterface
     /**
      * @inheritdoc
      */
-    public function count()
+    public function count(): int
     {
         return $this->size;
     }
@@ -111,7 +111,7 @@ class Stack implements StackInterface
     /**
      * @inheritdoc
      */
-    public function getIterator()
+    public function getIterator(): \Traversable
     {
         return new ArrayIterator($this->stack);
     }
